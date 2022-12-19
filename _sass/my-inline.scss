@@ -38,7 +38,7 @@
   
   .list-wrapper {
     text-align: left;
-    width: 18rem;
+    width: 22rem;
     display: flex;
   }
   
@@ -88,3 +88,41 @@
     transition: transform .2s ease-out;
   }
   
+  // Prevent FOUC
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.no-fouc {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-name: fadeIn;
+  opacity: 0;
+  // This line forces the browser to set the opacity to 1 after executing/finishing the animation
+  opacity: 1;
+}
