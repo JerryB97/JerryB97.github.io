@@ -27,13 +27,13 @@ timezone:              Asia/Seoul
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Test Is My Destiny
+  Data Scientist
 
 # A shorter description for the sidebar.
 tagline:               Simple is Best
 
 # A list of keywords for your blog
-keywords:              [KeyWord Test Wasdasd]
+keywords:              [AI, ML, DL, Data Science]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -89,7 +89,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/Forest_BackGround.png
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
