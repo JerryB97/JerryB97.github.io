@@ -2,7 +2,7 @@
 layout: post
 title: Machine Learning 관련 글
 subtitle: SubTitle3
-category: Machine Learning
+category: MachineLearning
 tags: paper
 ---
 
