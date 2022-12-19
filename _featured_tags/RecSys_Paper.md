@@ -1,8 +1,8 @@
 ---
 layout: tag-list
 type: tag
-title: Paper
-slug: paper
+title: Paper2
+slug: paper3
 category: RecommenderSystem
 sidebar: true
 order: 1
