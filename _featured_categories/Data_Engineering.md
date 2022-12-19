@@ -2,7 +2,7 @@
 layout: list
 type: category
 title: Data Engineering
-slug: data engineering
+slug: dataengineering
 sidebar: true
 order: 2
 description: >

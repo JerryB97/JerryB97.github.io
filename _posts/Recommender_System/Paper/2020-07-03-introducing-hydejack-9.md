@@ -2,7 +2,7 @@
 layout: post
 title: Recommender System 관련 글
 subtitle: SubTitle4
-category: recommender system
+category: RecommenderSystem
 tags: paper
 ---
 

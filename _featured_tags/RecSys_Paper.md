@@ -3,7 +3,7 @@ layout: tag-list
 type: tag
 title: Paper
 slug: paper
-category: recommender system
+category: RecommenderSystem
 sidebar: true
 order: 1
 description: >

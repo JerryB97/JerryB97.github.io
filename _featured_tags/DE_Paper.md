@@ -3,7 +3,7 @@ layout: tag-list
 type: tag
 title: Paper
 slug: paper
-category: data engineering
+category: DataEngineering
 sidebar: true
 order: 1
 description: >

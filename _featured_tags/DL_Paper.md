@@ -3,7 +3,7 @@ layout: tag-list
 type: tag
 title: Paper
 slug: paper
-category: deep learning
+category: DeepLearning
 sidebar: true
 order: 1
 description: >
