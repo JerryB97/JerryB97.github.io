@@ -60,14 +60,14 @@
   .spread-btn{
     background: none;
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     text-align: right;
     width: 9rem;
   }
   
   .spread-btn:hover{
-    color: #4FB1BA;
+    color: white;
   }
   
   input[type=checkbox]{
@@ -87,3 +87,42 @@
     transform: scaleY(1);
     transition: transform .2s ease-out;
   }
+  
+// Prevent FOUC
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.no-fouc {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-name: fadeIn;
+  opacity: 0;
+  // This line forces the browser to set the opacity to 1 after executing/finishing the animation
+  opacity: 1;
+}
