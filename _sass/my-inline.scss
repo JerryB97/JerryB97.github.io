@@ -38,7 +38,7 @@
   
   .list-wrapper {
     text-align: left;
-    width: 21rem;
+    width: 22rem;
     display: flex;
   }
   
@@ -58,12 +58,12 @@
   // Submenu Insertion
   
   .spread-btn{
-    background: yellow;
+    background: none;
     border: none;
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     text-align: right;
-    width: 9rem;
+    width: 100%;
   }
   
   .spread-btn:hover{
