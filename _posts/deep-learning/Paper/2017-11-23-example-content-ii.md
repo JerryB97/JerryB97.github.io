@@ -3,7 +3,7 @@ layout: post
 title: Deep Learning 관련 글
 subtitle: SubTitle2
 category: deep-learning
-tags: paper
+tags: dl-paper
 ---
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.

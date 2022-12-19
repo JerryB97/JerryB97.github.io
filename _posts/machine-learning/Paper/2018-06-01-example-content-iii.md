@@ -3,7 +3,7 @@ layout: post
 title: Machine Learning 관련 글
 subtitle: SubTitle3
 category: machine-learning
-tags: paper
+tags: ml-paper
 ---
 
 Hydejack offers a few additional features to markup your markdown.

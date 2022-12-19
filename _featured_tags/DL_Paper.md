@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: Paper
-slug: paper
+slug: dl-paper
 category: deep-learning
 sidebar: true
 description: >

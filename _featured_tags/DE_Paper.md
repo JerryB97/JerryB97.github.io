@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: Paper
-slug: paper
+slug: de-paper
 category: data-engineering
 sidebar: true
 description: >

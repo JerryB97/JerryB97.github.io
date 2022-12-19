@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: Paper
-slug: paper
+slug: recsys-paper
 category: recommender-system
 sidebar: true
 description: >
