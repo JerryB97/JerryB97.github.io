@@ -20,7 +20,7 @@
 lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 JerryB's Lab
+title:                 JerryB's Path
 
 timezone:              Asia/Seoul
 
@@ -38,7 +38,7 @@ keywords:              [AI, ML, DL, Data Science]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/Jerry.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
