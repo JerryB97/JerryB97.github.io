@@ -2,7 +2,7 @@
 layout: post
 title: Data Engineering 관련 글
 subtitle: SubTitle
-category: DataEngineering
+category: data-engineering
 tags: paper
 ---
 

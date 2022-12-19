@@ -1,9 +1,9 @@
 ---
 layout: tag-list
 type: tag
-title: Paper2
-slug: paper3
-category: RecommenderSystem
+title: Paper
+slug: paper
+category: recommender-system
 sidebar: true
 description: >
    Paper Related RecSys

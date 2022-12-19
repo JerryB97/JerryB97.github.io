@@ -2,7 +2,7 @@
 layout: post
 title: Deep Learning 관련 글
 subtitle: SubTitle2
-category: DeepLearning
+category: deep-learning
 tags: paper
 ---
 

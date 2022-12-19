@@ -2,9 +2,9 @@
 layout: list
 type: category
 title: Recommender System
-slug: RecommenderSystem
+slug: recommender-system
 sidebar: true
-order: 2
+order: 1
 description: >
   About RecSys
 ---

@@ -3,7 +3,7 @@ layout: tag-list
 type: tag
 title: Paper
 slug: paper
-category: MachineLearning
+category: machine-learning
 sidebar: true
 description: >
    Paper Related Machine Learning

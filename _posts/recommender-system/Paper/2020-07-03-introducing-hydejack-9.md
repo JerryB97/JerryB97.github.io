@@ -2,8 +2,8 @@
 layout: post
 title: Recommender System 관련 글
 subtitle: SubTitle4
-category: RecommenderSystem
-tags: paper2
+category: recommender-system
+tags: paper
 ---
 
 Version 9 is the most complete version of Hydejack yet.
