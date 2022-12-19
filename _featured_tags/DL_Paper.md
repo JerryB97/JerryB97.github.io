@@ -3,9 +3,9 @@ layout: tag-list
 type: tag
 title: Paper
 slug: paper
-category: recommender system
+category: deep learning
 sidebar: true
 order: 1
 description: >
-   Paper Related RecSys
+   Paper Related Deep Learning
 ---

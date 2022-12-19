@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: RecSys
-slug: recsys
+title: Deep Learning
+slug: deep learning
 sidebar: true
 order: 2
 description: >
-  About RecSys
+  About Deep Learning
 ---
