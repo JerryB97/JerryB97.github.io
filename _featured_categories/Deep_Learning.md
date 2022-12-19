@@ -2,7 +2,7 @@
 layout: list
 type: category
 title: Deep Learning
-slug: deeplearning
+slug: DeepLearning
 sidebar: true
 order: 2
 description: >

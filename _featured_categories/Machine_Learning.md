@@ -2,7 +2,7 @@
 layout: list
 type: category
 title: Machine Learning
-slug: machinelearning
+slug: MachineLearning
 sidebar: true
 order: 2
 description: >

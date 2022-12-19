@@ -2,7 +2,7 @@
 layout: list
 type: category
 title: Recommender System
-slug: recommendersystem
+slug: RecommenderSystem
 sidebar: true
 order: 2
 description: >
