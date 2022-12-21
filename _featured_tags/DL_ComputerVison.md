@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Paper
-slug: dl-paper
+title: Computer Vision
+slug: computer-vision
 category: deeplearning
 sidebar: true
 description: >
-   Paper Related Deep Learning
+   About Computer Vision
 ---

@@ -1,7 +1,7 @@
 ---
 layout: list
 type: category
-title: ThinkBox
+title: Think Box
 slug: thinkbox
 sidebar: true
 order: 1

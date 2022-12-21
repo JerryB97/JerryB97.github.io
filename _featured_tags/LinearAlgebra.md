@@ -2,9 +2,9 @@
 layout: tag-list
 type: tag
 title: Paper
-slug: dl-paper
-category: deeplearning
+slug: cv-paper
+category: computer-vision
 sidebar: true
 description: >
-   Paper Related Deep Learning
+   Paper Related Computer Vision
 ---
