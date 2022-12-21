@@ -4,7 +4,7 @@ type: category
 title: Recommender System
 slug: recommender-system
 sidebar: true
-order: 1
+order: 2
 description: >
   About RecSys
 ---

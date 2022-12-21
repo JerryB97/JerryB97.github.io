@@ -4,7 +4,7 @@ type: category
 title: Machine Learning
 slug: machine-learning
 sidebar: true
-order: 2
+order: 3
 description: >
   About Machine Learning
 ---

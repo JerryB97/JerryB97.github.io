@@ -4,7 +4,7 @@ type: category
 title: Deep Learning
 slug: deep-learning
 sidebar: true
-order: 3
+order: 4
 description: >
   About Deep Learning
 ---
