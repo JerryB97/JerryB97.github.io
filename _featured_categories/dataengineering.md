@@ -1,5 +1,5 @@
 ---
-layout: category-list
+layout: list
 type: category
 title: Data Engineering
 slug: data-engineering
