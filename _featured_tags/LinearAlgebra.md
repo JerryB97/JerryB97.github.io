@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Paper
-slug: cv-paper
-category: computer-vision
-sidebar: true
+title: Linear Algebra
+slug: linear-algebra
+category: statistics
+sidebar: false
 description: >
-   Paper Related Computer Vision
+   about Linear ALgebra
 ---

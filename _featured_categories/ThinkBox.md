@@ -2,7 +2,7 @@
 layout: list
 type: category
 title: Think Box
-slug: thinkbox
+slug: think-box
 sidebar: true
 order: 1
 description: >
