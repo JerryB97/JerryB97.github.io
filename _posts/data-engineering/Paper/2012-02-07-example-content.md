@@ -4,6 +4,8 @@ title: Data Engineering 관련 글
 subtitle: SubTitle
 category: data-engineering
 tags: de-paper
+image:
+    path: /assets/img/posts/thumbnail_statistics_03.png
 ---
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
