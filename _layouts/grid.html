@@ -15,7 +15,7 @@ layout: page
 {% endcapture %}
 {% assign category_sorted = categories | split:' ' | sort_natural %}
 
-{$ for category in category_sorted %}
+{% for category in category_sorted %}
   {% for post in site.categories[category] %}
     {% if post.project %}
       {% unless page.no_groups %}
