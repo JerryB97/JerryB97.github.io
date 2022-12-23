@@ -3,7 +3,7 @@ layout: post
 title: NLP 관련 글2
 subtitle: SubTitle
 category: deep-learning
-tags: nlp
+tags: natural-language-processing
 summary: Study 관련 글을 적을 예정2
 project: true
 image:
