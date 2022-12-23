@@ -8,6 +8,10 @@ layout: page
 
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
 
+{% for a in site.categories %}
+  {{ a[0] }}
+{% endfor %}
+
 {% capture categories %}
   {% for category in site.categories %}
     {{ category[0] }}
