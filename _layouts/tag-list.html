@@ -4,7 +4,7 @@ layout: page
 
 {{ content }}
 
-{% assign posts = site.tags[page.slug] %}
+{% assign posts = site.project %}
 
 {% assign date_formats  = site.data.strings.date_formats               %}
 {% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
