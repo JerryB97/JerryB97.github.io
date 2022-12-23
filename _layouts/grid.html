@@ -10,38 +10,41 @@ layout: page
 
 {% assign prev_category = 0 %}
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
-{% for post in posts %}
-  {% assign current_category = post.category %}
 
-  {% unless page.no_groups %}{% if current_category != prev_category %}
-    {% unless forloop.first %}</div>{% endunless %}
+{% for category in site.categories %}
+  {% assign posts_category = site.categories[category] & site.project[page.project] %}
+  {% for post in posts_category %}
 
-    <h2 id="{{ current_category }}">{{ current_category }}</h2>
-    <div class="columns columns-break">
-    {% assign prev_category = current_category %}
-  {% endif %}{% endunless %}
+    {% unless page.no_groups %}{% if current_category != prev_category %}
+      {% unless forloop.first %}</div>{% endunless %}
 
-  {% assign featured = page.featured | default:post.featured %}
-  <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
-    <article class ="project-card">
-        <a href="{{ post.url | relative_url }}" class="no-hover no-print-link flip-project" tabindex="-1">
-            <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">
-                <img src="{{ post.image.path }}" alt="{{ post.title }}" width="864" height="486" loading="lazy">
-            </div>
-        </a>
+      <h2 id="{{ category }}">{{ category }}</h2>
+      <div class="columns columns-break">
+      {% assign prev_category = category %}
+    {% endif %}{% endunless %}
 
-        <h3 class="project-card-title flip-project-title">
-            <a href="{{ post.url | relative_url }}" class="flip-title">{{ post.title }}</a>
-        </h3>
+    {% assign featured = page.featured | default:post.featured %}
+    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+      <article class ="project-card">
+          <a href="{{ post.url | relative_url }}" class="no-hover no-print-link flip-project" tabindex="-1">
+              <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">
+                  <img src="{{ post.image.path }}" alt="{{ post.title }}" width="864" height="486" loading="lazy">
+              </div>
+          </a>
 
-        <p class="project-card-text fine" property="disambiguatingDescription">
-            {{ post.summary }}
-            <a class="fill-card no-hover" href="{{ post.url | relative_url }}" tabindex="-1">
-                <span class="sr-only">Continue reading {{ post.title }}</span>
-            </a>
-        </p>
-    </article>
-  </div>
+          <h3 class="project-card-title flip-project-title">
+              <a href="{{ post.url | relative_url }}" class="flip-title">{{ post.title }}</a>
+          </h3>
 
-  {% if forloop.last %}</div>{% endif %}
+          <p class="project-card-text fine" property="disambiguatingDescription">
+              {{ post.summary }}
+              <a class="fill-card no-hover" href="{{ post.url | relative_url }}" tabindex="-1">
+                  <span class="sr-only">Continue reading {{ post.title }}</span>
+              </a>
+          </p>
+      </article>
+    </div>
+
+    {% if forloop.last %}</div>{% endif %}
+  {% endfor %} 
 {% endfor %}
