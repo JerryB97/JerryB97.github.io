@@ -18,41 +18,39 @@ layout: page
 {% endcapture %}
 {% assign category_sorted = categories | split:' ' | sort_natural %}
 
-{% for category in category_sorted %}
-<h2>{{category}}</h2>
-{% endfor %}
+{$ for category in category_sorted %}
+  {% for post in site.categories[category] %}
+    {% if post.project %}
+      {% unless page.no_groups %}
+        {% unless forloop.first %}</div>{% endunless %}
 
-{% for post in posts %}
-  {% if post.project %}
-    {% unless page.no_groups %}
-      {% unless forloop.first %}</div>{% endunless %}
+        <h2 id="{{ post.category }}">{{ post.category }}</h2>
+        <div class="columns columns-break">
+      {% endunless %}
 
-      <h2 id="{{ post.category }}">{{ post.category }}</h2>
-      <div class="columns columns-break">
-    {% endunless %}
+      {% assign featured = page.featured | default:post.featured %}
+      <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+        <article class ="project-card">
+            <a href="{{ post.url | relative_url }}" class="no-hover no-print-link flip-project" tabindex="-1">
+                <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">
+                    <img src="{{ post.image.path }}" alt="{{ post.title }}" width="864" height="486" loading="lazy">
+                </div>
+            </a>
 
-    {% assign featured = page.featured | default:post.featured %}
-    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
-      <article class ="project-card">
-          <a href="{{ post.url | relative_url }}" class="no-hover no-print-link flip-project" tabindex="-1">
-              <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">
-                  <img src="{{ post.image.path }}" alt="{{ post.title }}" width="864" height="486" loading="lazy">
-              </div>
-          </a>
+            <h3 class="project-card-title flip-project-title">
+                <a href="{{ post.url | relative_url }}" class="flip-title">{{ post.title }}</a>
+            </h3>
 
-          <h3 class="project-card-title flip-project-title">
-              <a href="{{ post.url | relative_url }}" class="flip-title">{{ post.title }}</a>
-          </h3>
+            <p class="project-card-text fine" property="disambiguatingDescription">
+                {{ post.summary }}
+                <a class="fill-card no-hover" href="{{ post.url | relative_url }}" tabindex="-1">
+                    <span class="sr-only">Continue reading {{ post.title }}</span>
+                </a>
+            </p>
+        </article>
+      </div>
 
-          <p class="project-card-text fine" property="disambiguatingDescription">
-              {{ post.summary }}
-              <a class="fill-card no-hover" href="{{ post.url | relative_url }}" tabindex="-1">
-                  <span class="sr-only">Continue reading {{ post.title }}</span>
-              </a>
-          </p>
-      </article>
-    </div>
-
-    {% if forloop.last %}</div>{% endif %}
-  {% endif %}
-{% endfor %}
+      {% if forloop.last %}</div>{% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor $}
