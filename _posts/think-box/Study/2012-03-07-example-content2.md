@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Study 관련 글2
+title: Algebra 관련 글2
 subtitle: SubTitle
 category: think-box
 tags: study
