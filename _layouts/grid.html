@@ -11,8 +11,15 @@ layout: page
 {% assign prev_category = 0 %}
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
 
-{% for category in site.categories %}
-<h2 id="{{category}}"></h2>
+{% capture categories %}
+  {% for category in site.categories %}
+    {{ category[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign category_sorted = categories | split:' ' | sort_natural %}
+
+{% for category in category_sorted %}
+<h2>{{category}}</h2>
 {% endfor %}
 
 {% for post in posts %}
