@@ -24,7 +24,7 @@ layout: page
         {% if prev_category != category %}
           {% unless forloop.first %}</div>{% endunless %}
 
-          <h2 id="{{ post.category }}">{{ post.category|upper }}</h2>
+          <h2 id="{{ post.category }}">{{ category }}</h2>
           <div class="columns columns-break">
           {% assign prev_category = category %}
         {% endif %}
