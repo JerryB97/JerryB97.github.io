@@ -2,13 +2,10 @@
 layout: page
 ---
 
-{% assign posts = site.posts %}
-
 {{ content }}
 
 {% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:false %}
 
-{% assign prev_category = 0 %}
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
 
 {% capture categories %}
@@ -53,4 +50,4 @@ layout: page
       {% if forloop.last %}</div>{% endif %}
     {% endif %}
   {% endfor %}
-{% endfor $}
+{% endfor %}
