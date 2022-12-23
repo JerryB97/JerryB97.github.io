@@ -15,15 +15,17 @@ layout: page
 {% endcapture %}
 {% assign category_sorted = categories | split:' ' | sort_natural %}
 
+{% assign prev_category = ""}
+
 {% for category in category_sorted %}
   {% for post in site.categories[category] %}
     {% if post.project %}
-      {% unless page.no_groups %}
+      {% unless page.no_groups %}{% if category != prev_category %}
         {% unless forloop.first %}</div>{% endunless %}
 
         <h2 id="{{ post.category }}">{{ post.category|upper }} TEST {{ "test"|upper }}</h2>
         <div class="columns columns-break">
-      {% endunless %}
+      {% endif %}{% endunless %}
 
       {% assign featured = page.featured | default:post.featured %}
       <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
