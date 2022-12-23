@@ -12,6 +12,7 @@ layout: page
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
 
 {% for category in site.categories %}
+  <h2 id="{{ category }}">{{ category }}</h2>
   {% assign posts_category = site.categories[category] & site.project[page.project] %}
   {% for post in posts_category %}
 
