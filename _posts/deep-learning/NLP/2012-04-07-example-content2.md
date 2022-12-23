@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Algebra 관련 글2
+title: NLP 관련 글2
 subtitle: SubTitle
-category: think-box
-tags: study
+category: deep-learning
+tags: nlp
 summary: Study 관련 글을 적을 예정2
 project: true
 image:
