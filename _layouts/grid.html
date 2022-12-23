@@ -12,8 +12,7 @@ layout: page
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
 
 {% for category in site.categories %}
-  {% assign posts_category = site.categories[category] %}
-  {% for post in posts_category %}
+  {% for post in site.categories[category] %}
     {% if post.project %}
       {% unless page.no_groups %}
         {% unless forloop.first %}</div>{% endunless %}
