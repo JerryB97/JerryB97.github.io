@@ -21,7 +21,7 @@ layout: page
       {% unless page.no_groups %}
         {% unless forloop.first %}</div>{% endunless %}
 
-        <h2 id="{{ post.category }}">{{ post.category }}</h2>
+        <h2 id="{{ post.category }}">{{ post.category | cut() }}</h2>
         <div class="columns columns-break">
       {% endunless %}
 
