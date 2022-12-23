@@ -15,7 +15,7 @@ layout: page
 {% endcapture %}
 {% assign category_sorted = categories | split:' ' | sort_natural %}
 
-{% assign prev_category = ""}
+{% assign prev_category = 0}
 
 {% for category in category_sorted %}
   {% for post in site.categories[category] %}
