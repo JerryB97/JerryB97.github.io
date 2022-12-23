@@ -8,10 +8,6 @@ layout: page
 
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
 
-{% for a in site.categories %}
-  {{ a[0] }}
-{% endfor %}
-
 {% capture categories %}
   {% for category in site.categories %}
     {{ category[0] }}
@@ -27,8 +23,13 @@ layout: page
       {% unless page.no_groups %}
         {% if prev_category != category %}
           {% unless forloop.first %}</div>{% endunless %}
-
-          <h2 id="{{ post.category }}">{{ category }}</h2>
+          {% assign words = category | split: '-' %}
+          {% capture title %}
+            {% for word in words %}
+              {{ word | capitalize }}
+            {% endfor %}
+          {% endcapture %}
+          <h2 id="{{ post.category }}">{{ title }}</h2>
           <div class="columns columns-break">
           {% assign prev_category = category %}
         {% endif %}
