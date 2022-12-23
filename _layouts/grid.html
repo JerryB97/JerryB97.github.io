@@ -15,15 +15,13 @@ layout: page
 {% endcapture %}
 {% assign category_sorted = categories | split:' ' | sort_natural %}
 
-{% assign prev_category = 0}
-
 {% for category in category_sorted %}
   {% for post in site.categories[category] %}
     {% if post.project %}
       {% unless page.no_groups %}
         {% unless forloop.first %}</div>{% endunless %}
 
-        <h2 id="{{ post.category }}">{{ post.category|upper }} TEST {{ "test"|upper }}</h2>
+        <h2 id="{{ post.category }}">{{ post.category|upper }}</h2>
         <div class="columns columns-break">
       {% endunless %}
 
@@ -48,6 +46,7 @@ layout: page
             </p>
         </article>
       </div>
+
       {% if forloop.last %}</div>{% endif %}
     {% endif %}
   {% endfor %}
