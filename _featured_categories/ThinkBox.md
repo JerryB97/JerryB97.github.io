@@ -2,7 +2,7 @@
 layout: grid
 type: category
 title: Think Box
-slug: think-box machine-learning recommender-system
+slug: think-box
 sidebar: true
 order: 1
 description: >
