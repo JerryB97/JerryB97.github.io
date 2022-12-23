@@ -25,19 +25,3 @@ layout: page
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
 </div>
-
-{%- capture tags -%}
-  {%- assign tags_len = 1 -%}
-  {%- for tag in site.tags -%}
-    {%- if tags_len < site.tags.size -%}
-      {{- tag[0] -}},
-      {%- assign tags_len = tags_len | plus: 1 -%}
-    {%- else -%}
-      {{- tag[0] -}}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-{%- assign tag_sorted = tags | split:' ' | sort_natural -%}
-
-{{ tag_sorted }}
-
